@@ -1,0 +1,116 @@
+.theme {
+  position: absolute;
+  width: 100vw;
+  height: 184%;
+  left: 50%;
+  background-color: #5c323236;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theme .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: var(--border-radius);
+}
+.close {
+  margin: auto;
+  display: block;
+  margin-top: 14px;
+  width: 41px;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: 900;
+  color: red;
+  transition: var(--transtion-time);
+  background-color: #000000f5;
+  font-size: 21px;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: green;
+  color: white;
+}
+.selecttheme {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.selecttheme .themecolors {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .selecttheme .themecolors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(57px, 1fr));
+    gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.themecolors div {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.selecttheme .themecolors div:first-child {
+  background-color: rgba(0, 81, 255, 0.582);
+}
+.selecttheme .themecolors div:nth-child(2) {
+  background-color: aqua;
+}
+.selecttheme .themecolors div:nth-child(3) {
+  background-color: black;
+}
+.selecttheme .themecolors div:nth-child(4) {
+  background-color: green;
+}
+.selecttheme .themecolors div:nth-child(5) {
+  background-color: blue;
+}
+.selecttheme .themecolors div:nth-child(6) {
+  background-color: gray;
+}
+.selecttheme .themecolors div:nth-child(7) {
+  background-color: blueviolet;
+}
+.selecttheme .themecolors div:nth-child(8) {
+  background-color: yellow;
+}
+.selecttheme .themecolors div:nth-child(9) {
+  background-color: red;
+}
+.selecttheme .themecolors div:last-child {
+  background-color: violet;
+}
+.selectavatar .themeavater {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .selectavatar .themeavater {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+.selectavatar .themeavater div {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgba(160, 209, 160, 0.712);
+  cursor: pointer;
+}

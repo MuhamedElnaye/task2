@@ -1,0 +1,76 @@
+/* start  Glopal Rules */
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* Css Custom Variable */
+:root {
+  --primary-color: #195383;
+  --secondary-color: #93f5c5d3;
+  --white: #fff;
+  --transition-time: all 0.3s ease;
+  --border-radius: 40px;
+}
+*,
+*::before,
+*::after,
+ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 10px 15px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  font-size: 1rem;
+  transition: var(--transition-time);
+  line-height: 1.1;
+}
+.btn:hover {
+  background-color: #1aa762;
+  opacity: 1;
+  cursor: pointer;
+}
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+input:focus {
+  outline: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End  Glopal Rules */
